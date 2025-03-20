@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Getrennt- oder Zusammenschreibung - Grammatikportal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Grammatikportal</h1>
+            <p class="subtitle">Getrennt- oder Zusammenschreibung</p>
+            <nav class="topic-nav">
+                <a href="../index.html" class="back-button"><i class="fas fa-arrow-left"></i> Zurück zur Übersicht</a>
+                <span id="user-display"></span>
+            </nav>
+        </header>
+
+        <div class="topic-container">
+            <section class="theory-section">
+                <h2>Getrennt- oder Zusammenschreibung - Die Regeln</h2>
+                
+                <div class="theory-content">
+                    <p>Die Entscheidung, ob Wörter getrennt oder zusammengeschrieben werden, folgt bestimmten Regeln:</p>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> Zusammenschreibung</h3>
+                        <p>Wörter werden zusammengeschrieben, wenn:</p>
+                        <ul>
+                            <li><strong>Substantiv + Verb:</strong> <em>radfahren</em>, <em>eislaufen</em> (aber: Rad fahren, Eis laufen)</li>
+                            <li><strong>Adjektiv + Verb</strong> (wenn neue Bedeutung entsteht): <em>schwarzfahren</em>, <em>freisprechen</em></li>
+                            <li><strong>Verb + Verb</strong> (wenn feste Verbindung): <em>kennenlernen</em>, <em>spazierengehen</em></li>
+                            <li><strong>Partikel + Verb:</strong> <em>aufstehen</em>, <em>weglaufen</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> Getrenntschreibung</h3>
+                        <p>Wörter werden getrennt geschrieben, wenn:</p>
+                        <ul>
+                            <li><strong>Substantiv + Verb</strong> (wenn Substantiv erkennbar bleibt): <em>Rad fahren</em>, <em>Klavier spielen</em></li>
+                            <li><strong>Adjektiv + Verb</strong> (wenn Adjektiv eigenständig bleibt): <em>schnell laufen</em>, <em>gut kochen</em></li>
+                            <li><strong>Verb + Verb</strong> (wenn zwei eigenständige Handlungen): <em>sitzen bleiben</em>, <em>liegen lassen</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> Besondere Fälle</h3>
+                        <p>Bei einigen Verbindungen sind beide Schreibweisen möglich:</p>
+                        <ul>
+                            <li><strong>Verbindungen mit "sein":</strong> <em>da sein / dasein</em>, <em>zusammen sein / zusammensein</em></li>
+                            <li><strong>Verbindungen mit "lassen":</strong> <em>fallen lassen / fallenlassen</em></li>
+                            <li><strong>Verbindungen mit "bleiben":</strong> <em>stehen bleiben / stehenbleiben</em></li>
+                        </ul>
+                        <p class="tip"><strong>Tipp:</strong> Im Zweifelsfall im Wörterbuch nachschlagen oder die Getrenntschreibung wählen.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="exercise-section">
+                <h2>Übungen</h2>
+                
+                <div id="exercise-container" class="exercise-container">
+                    <!-- Hier werden die Übungen dynamisch geladen -->
+                    <div class="exercise-navigation">
+                        <span class="exercise-counter">Übung <span id="current-exercise">1</span> von <span id="total-exercises">10</span></span>
+                        <div class="progress-container small">
+                            <div class="progress-bar" id="exercise-progress" style="width: 10%;">10%</div>
+                        </div>
+                    </div>
+                    
+                    <div id="exercise-content">
+                        <!-- Übungsinhalt wird hier eingefügt -->
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <button id="hint-button" class="hint-button"><i class="fas fa-lightbulb"></i> Hinweis</button>
+                        <button id="check-button">Überprüfen</button>
+                        <button id="next-button" style="display: none;">Nächste Übung</button>
+                    </div>
+                    
+                    <div id="hint-text" class="hint-text"></div>
+                    <div id="feedback" class="feedback"></div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Grammatikportal - Ein Projekt für den Deutschunterricht</p>
+        </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="getrennt-zusammen.js"></script>
+</body>
+</html> 

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kommasetzung - Grammatikportal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Grammatikportal</h1>
+            <p class="subtitle">Kommasetzung</p>
+            <nav class="topic-nav">
+                <a href="../index.html" class="back-button"><i class="fas fa-arrow-left"></i> Zurück zur Übersicht</a>
+                <span id="user-display"></span>
+            </nav>
+        </header>
+
+        <div class="topic-container">
+            <section class="theory-section">
+                <h2>Kommasetzung - Die Regeln</h2>
+                
+                <div class="theory-content">
+                    <p>Die Kommasetzung im Deutschen folgt bestimmten Regeln, die helfen, Sätze klar zu strukturieren:</p>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> Hauptsatz und Nebensatz</h3>
+                        <p>Zwischen Haupt- und Nebensatz steht immer ein Komma:</p>
+                        <ul>
+                            <li><strong>Nebensatz nach Hauptsatz:</strong> <em>Ich komme später, weil ich noch arbeiten muss.</em></li>
+                            <li><strong>Nebensatz vor Hauptsatz:</strong> <em>Wenn es regnet, bleiben wir zu Hause.</em></li>
+                            <li><strong>Nebensatz im Hauptsatz:</strong> <em>Der Film, den wir gestern gesehen haben, war spannend.</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> Aufzählungen</h3>
+                        <p>Bei Aufzählungen werden die einzelnen Elemente durch Kommas getrennt:</p>
+                        <ul>
+                            <li><strong>Wörter:</strong> <em>Ich kaufe Äpfel, Bananen, Orangen und Birnen.</em></li>
+                            <li><strong>Wortgruppen:</strong> <em>Er liest gerne, hört Musik, trifft Freunde und geht wandern.</em></li>
+                            <li><strong>Hauptsätze:</strong> <em>Ich komme nach Hause, ich esse zu Abend, und dann gehe ich schlafen.</em></li>
+                        </ul>
+                        <p class="tip"><strong>Tipp:</strong> Vor "und" und "oder" steht in einfachen Aufzählungen kein Komma.</p>
+                    </div>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> Einschübe und Zusätze</h3>
+                        <p>Einschübe und Zusätze werden durch Kommas abgetrennt:</p>
+                        <ul>
+                            <li><strong>Anreden:</strong> <em>Liebe Eltern, ich schreibe euch aus dem Urlaub.</em></li>
+                            <li><strong>Ausrufe:</strong> <em>Oh, das habe ich nicht gewusst.</em></li>
+                            <li><strong>Erläuterungen:</strong> <em>Mein Bruder, der älteste von uns, wohnt in Berlin.</em></li>
+                            <li><strong>Nachgestellte Erklärungen:</strong> <em>Das Buch war interessant, besonders das letzte Kapitel.</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> Besondere Fälle</h3>
+                        <p>Einige Konstruktionen erfordern besondere Aufmerksamkeit:</p>
+                        <ul>
+                            <li><strong>Infinitivgruppen:</strong> <em>Sie ging in die Stadt, um ein Geschenk zu kaufen.</em> (mit "um zu", "ohne zu", "statt zu", "anstatt zu")</li>
+                            <li><strong>Partizipgruppen:</strong> <em>Laut singend, ging er durch den Wald.</em></li>
+                            <li><strong>Vergleiche mit "als" und "wie":</strong> <em>Er ist größer als sein Bruder.</em> (kein Komma bei einfachen Vergleichen)</li>
+                        </ul>
+                        <p class="tip"><strong>Tipp:</strong> Bei Unsicherheit prüfe, ob ein Nebensatz vorliegt (erkennbar an konjugiertem Verb am Ende).</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="exercise-section">
+                <h2>Übungen</h2>
+                
+                <div id="exercise-container" class="exercise-container">
+                    <!-- Hier werden die Übungen dynamisch geladen -->
+                    <div class="exercise-navigation">
+                        <span class="exercise-counter">Übung <span id="current-exercise">1</span> von <span id="total-exercises">10</span></span>
+                        <div class="progress-container small">
+                            <div class="progress-bar" id="exercise-progress" style="width: 10%;">10%</div>
+                        </div>
+                    </div>
+                    
+                    <div id="exercise-content">
+                        <!-- Übungsinhalt wird hier eingefügt -->
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <button id="hint-button" class="hint-button"><i class="fas fa-lightbulb"></i> Hinweis</button>
+                        <button id="check-button">Überprüfen</button>
+                        <button id="next-button" style="display: none;">Nächste Übung</button>
+                    </div>
+                    
+                    <div id="hint-text" class="hint-text"></div>
+                    <div id="feedback" class="feedback"></div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Grammatikportal - Ein Projekt für den Deutschunterricht</p>
+        </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="komma.js"></script>
+</body>
+</html> 

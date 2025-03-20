@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Das oder Dass - Grammatikportal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Grammatikportal</h1>
+            <p class="subtitle">Das oder Dass</p>
+            <nav class="topic-nav">
+                <a href="../index.html" class="back-button"><i class="fas fa-arrow-left"></i> Zurück zur Übersicht</a>
+                <span id="user-display"></span>
+            </nav>
+        </header>
+
+        <div class="topic-container">
+            <section class="theory-section">
+                <h2>Das oder Dass - Der Unterschied</h2>
+                
+                <div class="theory-content">
+                    <p>Die Wörter "das" und "dass" werden oft verwechselt, haben aber unterschiedliche Funktionen:</p>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> "Das" (mit einem s)</h3>
+                        <p>"Das" kann sein:</p>
+                        <ul>
+                            <li><strong>Artikel:</strong> <em>Das</em> Buch liegt auf dem Tisch.</li>
+                            <li><strong>Demonstrativpronomen:</strong> <em>Das</em> ist mein Fahrrad.</li>
+                            <li><strong>Relativpronomen:</strong> Das Buch, <em>das</em> auf dem Tisch liegt, gehört mir.</li>
+                        </ul>
+                        <p class="tip"><strong>Tipp:</strong> "Das" kann durch "dieses", "jenes" oder "welches" ersetzt werden.</p>
+                    </div>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> "Dass" (mit doppeltem s)</h3>
+                        <p>"Dass" ist immer eine <strong>Konjunktion</strong> und leitet einen Nebensatz ein:</p>
+                        <ul>
+                            <li>Ich hoffe, <em>dass</em> du kommst.</li>
+                            <li>Er sagt, <em>dass</em> er müde ist.</li>
+                            <li>Es ist wichtig, <em>dass</em> wir pünktlich sind.</li>
+                        </ul>
+                        <p class="tip"><strong>Tipp:</strong> "Dass" kann nicht ersetzt werden und leitet immer einen Nebensatz ein.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="exercise-section">
+                <h2>Übungen</h2>
+                
+                <div id="exercise-container" class="exercise-container">
+                    <!-- Hier werden die Übungen dynamisch geladen -->
+                    <div class="exercise-navigation">
+                        <span class="exercise-counter">Übung <span id="current-exercise">1</span> von <span id="total-exercises">10</span></span>
+                        <div class="progress-container small">
+                            <div class="progress-bar" id="exercise-progress" style="width: 10%;">10%</div>
+                        </div>
+                    </div>
+                    
+                    <div id="exercise-content">
+                        <!-- Übungsinhalt wird hier eingefügt -->
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <button id="hint-button" class="hint-button"><i class="fas fa-lightbulb"></i> Hinweis</button>
+                        <button id="check-button">Überprüfen</button>
+                        <button id="next-button" style="display: none;">Nächste Übung</button>
+                    </div>
+                    
+                    <div id="hint-text" class="hint-text"></div>
+                    <div id="feedback" class="feedback"></div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2023 Grammatikportal - Ein Projekt für den Deutschunterricht</p>
+        </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="das-dass.js"></script>
+</body>
+</html> 

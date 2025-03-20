@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grammatikportal - Lerne Deutsch mit Spaß</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Grammatikportal</h1>
+            <p class="subtitle">Lerne deutsche Grammatik mit Spaß</p>
+        </header>
+
+        <div id="welcome-screen" class="active-screen">
+            <div class="welcome-content">
+                <h2>Willkommen zum Grammatikportal!</h2>
+                <p>Hier kannst du spielerisch die deutsche Grammatik üben und verbessern.</p>
+                
+                <div class="name-input">
+                    <label for="user-name">Wie heißt du?</label>
+                    <input type="text" id="user-name" placeholder="Dein Name">
+                    <button id="start-button">Los geht's!</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="main-menu" class="screen">
+            <h2>Hallo <span id="user-name-display"></span>! Wähle ein Thema:</h2>
+            
+            <div class="topics-grid">
+                <div class="topic-card" data-topic="das-dass">
+                    <div class="topic-icon"><i class="fas fa-spell-check"></i></div>
+                    <h3>Das oder Dass</h3>
+                    <p>Lerne den Unterschied zwischen "das" und "dass"</p>
+                    <button class="video-button" data-video="https://www.youtube.com/watch?v=n3Fy301XO-A">
+                        <i class="fas fa-play-circle"></i> Video ansehen
+                    </button>
+                </div>
+                
+                <div class="topic-card" data-topic="getrennt-zusammen">
+                    <div class="topic-icon"><i class="fas fa-arrows-alt-h"></i></div>
+                    <h3>Getrennt- oder Zusammenschreibung</h3>
+                    <p>Wann schreibt man Wörter zusammen und wann getrennt?</p>
+                    <button class="video-button" data-video="https://www.youtube.com/watch?v=9UMaqAzBLrk">
+                        <i class="fas fa-play-circle"></i> Video ansehen
+                    </button>
+                </div>
+                
+                <div class="topic-card" data-topic="gross-klein">
+                    <div class="topic-icon"><i class="fas fa-font"></i></div>
+                    <h3>Groß- und Kleinschreibung</h3>
+                    <p>Regeln zur korrekten Groß- und Kleinschreibung</p>
+                    <button class="video-button" data-video="https://www.youtube.com/watch?v=df0VmFdkENE">
+                        <i class="fas fa-play-circle"></i> Video ansehen
+                    </button>
+                </div>
+                
+                <div class="topic-card" data-topic="komma">
+                    <div class="topic-icon"><i class="fas fa-comma"></i></div>
+                    <h3>Kommasetzung</h3>
+                    <p>Wann und wo setzt man Kommas richtig ein?</p>
+                    <button class="video-button" data-video="https://www.youtube.com/watch?v=J0TDs1X2jJc">
+                        <i class="fas fa-play-circle"></i> Video ansehen
+                    </button>
+                </div>
+            </div>
+            
+            <div class="progress-section">
+                <h3>Dein Fortschritt</h3>
+                <div class="progress-container">
+                    <div class="progress-bar" id="overall-progress" style="width: 0%;">0%</div>
+                </div>
+                <div class="stats">
+                    <div class="stat">
+                        <span class="stat-value" id="completed-exercises">0</span>
+                        <span class="stat-label">Übungen abgeschlossen</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-value" id="earned-points">0</span>
+                        <span class="stat-label">Punkte</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Grammatikportal - by Silas, Raphael, Evelina, Lukas, Florian, Finley, Julian, Leon, Phillip & Cedric</p>
+        </footer>
+    </div>
+
+    <div class="video-modal" id="video-modal">
+        <div class="close-video" id="close-video">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="video-container">
+            <iframe id="youtube-frame" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html> 

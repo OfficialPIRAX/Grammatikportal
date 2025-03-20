@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Groß- und Kleinschreibung - Grammatikportal</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Grammatikportal</h1>
+            <p class="subtitle">Groß- und Kleinschreibung</p>
+            <nav class="topic-nav">
+                <a href="../index.html" class="back-button"><i class="fas fa-arrow-left"></i> Zurück zur Übersicht</a>
+                <span id="user-display"></span>
+            </nav>
+        </header>
+
+        <div class="topic-container">
+            <section class="theory-section">
+                <h2>Groß- und Kleinschreibung - Die Regeln</h2>
+                
+                <div class="theory-content">
+                    <p>Die deutsche Sprache hat klare Regeln für die Groß- und Kleinschreibung:</p>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> Großschreibung</h3>
+                        <p>Folgende Wörter werden großgeschrieben:</p>
+                        <ul>
+                            <li><strong>Substantive (Nomen):</strong> <em>Haus, Baum, Liebe, Freundschaft</em></li>
+                            <li><strong>Satzanfänge:</strong> <em>Der Tag beginnt. Es regnet.</em></li>
+                            <li><strong>Eigennamen:</strong> <em>Berlin, Deutschland, Anna, Müller</em></li>
+                            <li><strong>Substantivierungen:</strong> Wenn andere Wortarten als Substantive verwendet werden: <em>das Laufen, beim Essen, im Allgemeinen</em></li>
+                            <li><strong>Anredepronomen in Briefen:</strong> <em>Du, Dein, Sie, Ihr</em> (in formellen Schreiben)</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> Kleinschreibung</h3>
+                        <p>Folgende Wörter werden kleingeschrieben:</p>
+                        <ul>
+                            <li><strong>Verben:</strong> <em>laufen, spielen, singen</em></li>
+                            <li><strong>Adjektive:</strong> <em>schön, groß, interessant</em></li>
+                            <li><strong>Adverbien:</strong> <em>heute, dort, gerne</em></li>
+                            <li><strong>Pronomen:</strong> <em>ich, du, er, sie, es</em> (außer in Briefen)</li>
+                            <li><strong>Präpositionen:</strong> <em>in, auf, unter, neben</em></li>
+                            <li><strong>Konjunktionen:</strong> <em>und, oder, weil, dass</em></li>
+                            <li><strong>Artikel:</strong> <em>der, die, das, ein, eine</em></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="rule-box">
+                        <h3><i class="fas fa-check-circle"></i> Besondere Fälle</h3>
+                        <p>Einige Fälle erfordern besondere Aufmerksamkeit:</p>
+                        <ul>
+                            <li><strong>Feste Verbindungen mit Verben:</strong> <em>Rad fahren, Recht haben</em> (Substantiv groß, Verb klein)</li>
+                            <li><strong>Tageszeiten nach gestern, heute, morgen:</strong> <em>gestern Abend, heute Morgen</em> (Tageszeit groß)</li>
+                            <li><strong>Farb- und Sprachbezeichnungen:</strong> <em>das Blau des Himmels, auf Deutsch</em> (als Substantive groß)</li>
+                        </ul>
+                        <p class="tip"><strong>Tipp:</strong> Im Zweifelsfall frage dich, ob das Wort ein Ding, eine Person oder einen abstrakten Begriff bezeichnet (dann großschreiben).</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="exercise-section">
+                <h2>Übungen</h2>
+                
+                <div id="exercise-container" class="exercise-container">
+                    <!-- Hier werden die Übungen dynamisch geladen -->
+                    <div class="exercise-navigation">
+                        <span class="exercise-counter">Übung <span id="current-exercise">1</span> von <span id="total-exercises">10</span></span>
+                        <div class="progress-container small">
+                            <div class="progress-bar" id="exercise-progress" style="width: 10%;">10%</div>
+                        </div>
+                    </div>
+                    
+                    <div id="exercise-content">
+                        <!-- Übungsinhalt wird hier eingefügt -->
+                    </div>
+                    
+                    <div class="navigation-buttons">
+                        <button id="hint-button" class="hint-button"><i class="fas fa-lightbulb"></i> Hinweis</button>
+                        <button id="check-button">Überprüfen</button>
+                        <button id="next-button" style="display: none;">Nächste Übung</button>
+                    </div>
+                    
+                    <div id="hint-text" class="hint-text"></div>
+                    <div id="feedback" class="feedback"></div>
+                </div>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Grammatikportal - by Silas, Raphael, Evelina, Lukas, Florian, Finley, Julian, Leon, Phillip & Cedric</p>
+        </footer>
+    </div>
+
+    <script src="../js/main.js"></script>
+    <script src="gross-klein.js"></script>
+</body>
+</html> 
